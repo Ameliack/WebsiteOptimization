@@ -18,7 +18,7 @@ To run the code you can either download the folder onto your machine or navigate
 * I also removed the google fonts style
 
 ## Optimizations I made to main.js (for ```pizza.html```)
-I started off by looking at the ```changePizzaSizzes``` function. This is because this was the function that made an error occur when I resized the pizzas on the ```pizza.html``` page.
+I started off by looking at the ```changePizzaSizzes``` function. This is because this was the function that made an error occur when I resized the pizzas on the ```pizza.html``` page. What this does is it allows randomPizzaContainer to only be run once and not many times. 
 
 ```  function changePizzaSizes(size) {
     var pizzaElements = document.querySelectorAll(".randomPizzaContainer");
@@ -32,4 +32,4 @@ I started off by looking at the ```changePizzaSizzes``` function. This is becaus
 Then, to improve the ```updatePositions``` function, all I had to do was change ```scrollTop``` to ```scrollY``` because that function was no longer supported in Chrome. After I did this optimization to the code, the page was able to scroll smoothly and under 1 millisecond. I was able to figure this out because I looked at this website: https://stackoverflow.com/questions/20514596/document-documentelement-scrolltop-return-value-differs-in-chrome.
 
 ### Final Comment
-I shared my work with my sister Clara Krafft who is also right now working on this course. This is why we could have some similarities in our code. 
+I shared my work with my sister Clara Krafft who is also right now working on this course. This is why we could have some similarities in our code.
