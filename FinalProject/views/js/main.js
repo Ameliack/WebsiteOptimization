@@ -449,6 +449,8 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   //I only had to change this function so that the pizza images are able to change sizes smoothly.
+  //What I did here was instead of running randomPizzaContainer a lot of times I instead only run it once
+  //because I store it in the variable pizzaElements instead.
   function changePizzaSizes(size) {
     var pizzaElements = document.querySelectorAll(".randomPizzaContainer");
     var dx = determineDx(pizzaElements[0.0], size);
@@ -499,7 +501,8 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
 // Moves the sliding background pizzas based on scroll position
-//Here all I did was changed scrollTop to scrollY because it doesn't exist in chrome anymore
+//Here all I did was changed scrollTop to scrollY because it doesn't exist in chrome anymore and by
+// changing it to scrollY which allows it to be under 5 miliseconds. 
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
