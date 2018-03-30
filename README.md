@@ -29,4 +29,7 @@ I started off by looking at the ```changePizzaSizzes``` function. This is becaus
     }
   }
 ```
-Then, to improve the ```updatePositions``` function, all I had to do was change ```scrollTop``` to ```scrollY``` because that function was no longer supported in Chrome. After I did this optimization to the code, the page was able to scroll smoothly and under 1 millisecond.
+Then, to improve the ```updatePositions``` function, all I had to do was change ```scrollTop``` to ```scrollY``` because that function was no longer supported in Chrome. After I did this optimization to the code, the page was able to scroll smoothly and under 1 millisecond. I was able to figure this out because I looked at this website: https://stackoverflow.com/questions/20514596/document-documentelement-scrolltop-return-value-differs-in-chrome.
+
+### Final Comment
+I shared my work with my sister Clara Krafft who is also right now working on this course. This is why we could have some similarities in our code. 
