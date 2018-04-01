@@ -1,6 +1,6 @@
 # Website Performance Optimization portfolio project
 
-This is a Udacity project and the goal was to optimize the portfolios speed. The goal was that ```index.html``` is able to achieve at least a PageSpeed of 90 for Mobile and Desktop. My index.html was able to achieve 99 for Mobile and 91 for Desktop. I used this website to check the PageSpeed of ```index.html```: https://developers.google.com/speed/pagespeed/insights/.
+This is a Udacity project and the goal was to optimize the portfolios speed. The goal was that ```index.html``` is able to achieve at least a PageSpeed of 90 for Mobile and Desktop. My index.html was able to achieve 99 for Mobile and 96 for Desktop. I used this website to check the PageSpeed of ```index.html```: https://developers.google.com/speed/pagespeed/insights/.
 
 To run the code you can either download the folder onto your machine or navigate to this website: https://ameliack.github.io/WebsiteOptimization/FinalProject/index.html
 
