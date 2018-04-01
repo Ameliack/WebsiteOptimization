@@ -39,10 +39,7 @@ Then, to improve the ```updatePositions``` function, this is what I did:
   }
   ```
   Here I just moved the var ```scrollY``` variable out of the function. I also changed two of the```scrollTop``` to ```scrollY``` which improved the pages scroll speed.
-  I was able to figure this out on this website:https://stackoverflow.com/questions/20514596/document-documentelement-scrolltop-return-value-differs-in-chrome. I also changed
-  ```document.body.scrollTop
-  ```
-  to ```document.scrollingElement.scrollTop``` because the old one wasn't supported in chrome anymore.
+  I was able to figure this out on this website:https://stackoverflow.com/questions/20514596/document-documentelement-scrolltop-return-value-differs-in-chrome. I also changed "document.body.scrollTop" to ```document.scrollingElement.scrollTop``` because the old one wasn't supported in chrome anymore.
 
 ```document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
