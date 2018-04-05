@@ -45,7 +45,7 @@ Then, to improve the ```updatePositions``` function, this is what I did:
   var cols = 8;
   var s = 256;
   var theMovingPizzas = document.getElementById("movingPizzas1");
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 40; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
@@ -58,7 +58,7 @@ Then, to improve the ```updatePositions``` function, this is what I did:
   updatePositions();
 });
 ```
-I also moved this DOM call outside the for loop and saved it into a variable ```theMovingPizzas```. This is the reference that I used: https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById.
+I also moved this DOM call outside the for loop and saved it into a variable ```theMovingPizzas```. This is the reference that I used: https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById. Finally I also increased the number of sliding pizzas, in order to meet the specifications to 40.
 
 ### Final Comment
 I shared my work with my sister Clara Krafft who is also right now working on this course. This is why we could have some similarities in our code.
