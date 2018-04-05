@@ -504,7 +504,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 //Here all I did was changed scrollTop to scrollY and by
 // changing it to scrollY which allows it to be under 5 miliseconds. I also changed
 //document.body.scrollTop to document.scrollingElement.scrollTop because the old one wasn't
-//supported in chrome anymore. 
+//supported in chrome anymore.
 //
 function updatePositions() {
   frame++;
@@ -537,7 +537,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   var theMovingPizzas = document.getElementById("movingPizzas1");
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 40; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
